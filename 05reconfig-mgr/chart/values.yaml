@@ -1,0 +1,12 @@
+name: reconfig-mgr
+namespace: kubecomp
+
+image:
+  repository: reconfig-daemon
+  pullPolicy: Never
+
+configMap:
+  get_rec_endpoint: http://resource-pool-service.kubecomp.svc.cluster.local:8000/resources
+  reconfig_endpoint: http://resource-pool-service.kubecomp.svc.cluster.local:8000/allocation
+  node_names: kind-worker,kind-worker2,kind-worker3
+  host_ports: 1,2,3

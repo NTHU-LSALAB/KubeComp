@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+  namespace: {{ .Values.namespace }}
+data:
+  reconfig-mgr-config.yaml: |
+    get_rec_endpoint: {{ .Values.configMap.get_rec_endpoint }}
+    reconfig_endpoint: {{ .Values.configMap.reconfig_endpoint }}
+    node_names: {{ .Values.configMap.node_names }}
+    host_ports: {{ .Values.configMap.host_ports }}

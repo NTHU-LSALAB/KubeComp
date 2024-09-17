@@ -1,0 +1,16 @@
+scheduler:
+  name: kubecomp-scheduler 
+  image: kubecomp-scheduler
+  imagePullPolicy: Never
+  replicaCount: 1
+  leaderElect: false
+
+namespace: kubecomp
+
+plugins:
+  enabled: ["FalconResources"]
+
+pluginConfig:
+  - name: NodeResourcesFit
+    args:
+      ignoredResourceGroups: ["falcon.com"]

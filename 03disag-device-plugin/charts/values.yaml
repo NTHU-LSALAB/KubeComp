@@ -1,0 +1,18 @@
+image:
+  repository: disag-device-plugin
+  pullPolicy: Never
+
+namespace: kubecomp
+
+serviceAccount:
+  create: true
+  name: falcon-admin
+
+configMap:
+  name: falcon-topo
+  api_endpoint: http://resource-pool-service.kubecomp.svc.cluster.local:8000/resources
+  local_ips: 172.18.0.3,172.18.0.5,172.18.0.4
+  host_ports: 1,2,3
+  
+clusterRoleBinding:
+  name: falcon-role-binding
