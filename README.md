@@ -1,4 +1,5 @@
 # KubeComp
+_**"KubeComp: Resource-centric Composable Container Orchestrator for GPU Pooling" is  accepted by  UCC 2024!**_
 ## Introduction
 KubeComp is the first solution for Kubernetes to support GPU pooling based on a composable infrastructure. KubeComp makes Kubernetes
 aware of the underlying composable infrastructure and provides on-demand, optimized, and automated resource management for service deployment.
