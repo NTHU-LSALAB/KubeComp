@@ -40,3 +40,6 @@ spec:
 ```
 
 Since the cluster was originally set up with three worker nodes, each with 4 GPUs, the reallocation of 1 GPU will be observed.
+
+## Video
+[https://youtu.be/uqvb6CrrJoU](https://youtu.be/uqvb6CrrJoU)
